@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* -------header-------- */
+.navbar-brand img{
+    max-width: 170px;
+    margin-left: 55px;
+}
+.navbar-collapse{
+    margin-left: 105px;
+}
+
+
+/* -------about-------- */
+.before-after h3{
+    position: relative;
+}
+.before-after h3::before{
+    content: " ";
+    background: #ff5e14;
+    width: 60px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -14px;    
+}
+.before-after h3::after{
+    content: " ";
+    background: #ff5e14;
+    width: 20px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    left: 65px;
+    bottom: -14px;
+}
+.before-after2 h3{
+    position: relative;
+}
+.before-after2 h3::before{
+    content: " ";
+    background: #ff5e14;
+    width: 60px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    left: 600px;
+    bottom: -14px;
+    align-self:center;
+}
+.before-after2 h3::after{
+    content: " ";
+    background: #ff5e14;
+    width: 20px;
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    left:665px;
+    bottom: -14px;
+   
+}
+/* -------Upper-footer-------- */
+.foot-before ul{
+    position: relative;
+}
+.foot-before ul li::before{
+    content: " ";
+    background:  #c2c4c8;
+    width: 10px;
+    height: 1px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0px;
+    margin-top: 9px;
+       
+}
+.input{
+    position: relative;
+}
+.input span{
+    position: absolute;
+    content: "";
+    top: 12px ;
+    right: 30px;
+    font-size: 20px;
+}
+.up-icon  i{
+    color: #c2c4c8;
+    font-size: small;
+    margin-left: 6px;
+   
+}
+
+.up-icon .col:hover{
+    background-color: #ff5e14;
+}
+.up-icon{
+    width: 85%;
+}
+
+ 
+/* -------services-------- */
+.serv:hover{
+    color: #ff5e14;  
+}
+/* -------contact(s2)-------- */
+#contacts2{
+    background-image: url(./cta-s2-bg.jpg);
+    background-repeat: no-repeat; 
+    height :90vh;
+    position: relative;
+}
+#contacts2::before{
+    content: "";
+    background-color: rgba(2, 13, 38, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+#contacts2 .container{
+    position: relative;
+}
+#contacts2 .container .row{
+    position: absolute;
+   top: 0;
+}
+
+/* -------RN-------- */
+    .readM{
+        text-decoration: none; 
+        font-size:small;         
+        font-weight: 600
+    }
+    .readM a{
+        color:#687187; 
+    }
+    .readM a:hover{
+        color: #ff5e14;
+    }
+    /* -------member-------- */
+    .memb-pics img {
+       max-width: 100%;
+
+    }
+    .memb-row .col{
+        position: relative;
+    }
+    .memb-layer{
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        margin-top: 19rem;
+        overflow: hidden;
+        transition: height 0.3s;
+        
+    }
+    .memb-pics:hover .memb-layer {
+        height: 100%;
+    }
+
+    /* -------why-choose-us-------- */
+     .progress{
+        position: relative;
+        background-color: #e6e6e6;;
+    }
+
+ .skill{
+    position: relative;
+    margin-top: 30px;
+ }
+ .skill span{
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    padding: 2px 6px;
+    color: #687187;
+ }
+ .skill h6,span{
+    font-size: 13px;
+ }
+.progress-bar{
+    transition: width .6s ease;
+   
+}
+
+.progress-after::after{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color:#ff5e14;
+    border-radius: 50%;
+    position: absolute;
+    right: 170px;
+    top: -3px;
+    
+}
+
+
+@media only screen and (max-width: 600px){
+     
+     #header{
+        display: none;
+     }
+     .header-btn{
+        display: none;
+    }
+    .navbar-brand img{
+        margin-left: 5px;
+    }
+    .navbar .container{
+        padding: 5px !important;
+    }
+    .fa-bars:before{
+        content: "";
+    }
+
+    .navbar-toggler{
+        background-color: #ff5e14;
+        border-radius: 0 ;
+        /* color: white; */
+        margin-right: 30px;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar .navbar-collapse{
+        z-index: 1000;
+        position: fixed;
+        margin-top: 17.4rem;
+        background-color: white;
+       margin-left: 0;
+        width: 91%;
+    }
+    
+
+     /* -------home----- */
+  
+     .carousel-item-layer{
+        top: 2rem !important; 
+        bottom: 5px !important; 
+        left: 1rem !important;
+        padding: 16px !important;
+        margin: -30px 30px;
+        
+       
+     }
+   
+    
+     .carousel-item-layer h1{
+        font-size: 12px !important;
+     }
+     .carousel-item-layer p{
+        font-size: 10px !important;
+        margin-top: 10px !important;
+     }
+     .carousel-item-layer .btn{
+        margin-top: 0 !important;
+        width: 3.4rem !important;
+        font-size: 4.1px !important;
+        margin-bottom: 40px;
+     }
+     .carousel-item-layer .row{
+        width: 100% !important;
+     }
+  
+    
+     /* -------about----- */
+     #about .container{
+        padding: 12px !important;
+     }
+     .features{
+        margin-top: 3rem;
+     }
+     .features .col{
+     flex: none;
+     }
+     .about-pics{
+        display: none;
+     }
+     .about-details{
+        padding: 0 !important;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+     }
+     .before-after{
+        padding: 0 !important;
+     }
+     .before-after h1{
+        font-size: 23px;
+        font-weight: 800 !important;
+     }
+       /* -------services----- */
+       .service{
+         margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: 0 !important;
+       }
+       .service .container{
+        padding-top: 3rem;
+       padding-bottom: 2rem;
+
+      }
+     .before-after2 h3::before{
+        left: 110px;
+
+    }
+    .before-after2 h3::after{
+        left: 175px;
+    }
+     /* -------contact----- */
+    .contact-pics img{
+        max-width: 100%;
+    }
+    #contact .container{
+        padding: 30px !important;
+        margin-bottom: 40px;
+    }
+    .contact-pics-layer{
+         padding: 30px !important;
+         
+    }
+    #contact .container .col{
+     flex: none;   
+    }
+    .contact-form{
+        margin-top: 4rem;
+    }
+     .contact-forms .col{
+        margin-top: 16px;
+    }
+    .contact-btn{
+        width: 100%;
+    }
+   /* -------contact(section 2)----- */
+   #contacts2{
+   background-position: center;
+    height : 40vh;
+    padding-top: 5rem;
+}
+    #contacts2 .container{
+        padding: 0px !important;
+        width: 100% !important;
+    }
+    #contacts2 .container .row{
+        padding: 0 !important;
+    }
+    #contacts2 .container .col p{
+        font-size: 17px !important;
+    }
+    #contacts2 .container .col h1{
+        font-size: 35px !important;
+        margin-top: 14px !important;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .contacts2-btn{
+        margin-top: 16px !important;
+    }
+    /* -------why-choose-us----- */
+    #why-choose-us .container{
+        padding: 16px !important;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .wcu-details .col{
+        flex: none;
+    }
+    .wcu-details .col img{
+       margin-top: 3rem;
+    }
+    /* -------member----- */
+    #members .container{
+        padding: 10px !important;
+    }
+    .memb-row .col{
+        flex:  none;
+        
+    }
+    .memb-layer{
+     margin-left: 1.3rem;  
+        margin-top: 24rem;
+    }
+    .memb-layer .col{
+        width: 15% !important;
+    }
+    /* -------RN----- */
+    #recent-news .container{
+        padding: 16px !important;
+    }
+    #recent-news .container .col{
+       flex: none;
+    }
+    .rn-header .col{
+        margin-top: 30px;
+    }
+    .rn-details .col .box img{
+        max-width: 100% !important;
+    }
+    /* -----upper-footer---- */
+    .before-after{
+        flex: none;
+        margin-top:4rem;
+    }
+    .up-inner{
+        padding: 16px !important;
+    }
+
+    .foot2{
+        margin-left: 30px !important;
+    }
+    footer .container .foot-det{
+        flex: none;
+    }
+    footer .container{
+        margin-bottom: 20px;
+    }
+    .foot-2 li {
+      list-style: none;  
+    }
+}
